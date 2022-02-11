@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molla</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- google font cdn link  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fontawesome cdn link  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="main_page">
+        <main>
+            <header>
+                <nav>
+                    <ul>
+                        <a href="#"><img class="brandImage" src="images/brand_logo.png" alt="Company Logo"></a>
+                        <li>
+                            <div class="dropdown_container">
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown">HOME<i id="dropdown1"
+                                                class="icon-arrow  fal fa-angle-down fa-lg"></i></a>
+                                        <ul id="dropdown1" class="dropdown-menu hide">
+                                            <li><a href="#">Home Example</a></li>
+                                            <li><a href="#">Home Example</a></li>
+                                            <li><a href="#">Home Example</a></li>
+                                            <li><a href="#">Home Example</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown_container">
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown">SHOP<i id="dropdown2"
+                                                class="icon-arrow  fal fa-angle-down fa-lg"></i></a>
+                                        <ul id="dropdown2" class="dropdown-menu hide">
+                                            <li><a href="#">Shop Example</a></li>
+                                            <li><a href="#">Shop Example</a></li>
+                                            <li><a href="#">Shop Example</a></li>
+                                            <li><a href="#">Shop Example</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown_container">
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown">PRODUCT<i id="dropdown3"
+                                                class="icon-arrow  fal fa-angle-down fa-lg"></i></a>
+                                        <ul id="dropdown3" class="dropdown-menu hide">
+                                            <li><a href="#">Product Example</a></li>
+                                            <li><a href="#">Product Example</a></li>
+                                            <li><a href="#">Product Example</a></li>
+                                            <li><a href="#">Product Example</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown_container">
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown">PAGES<i id="dropdown4"
+                                                class="icon-arrow  fal fa-angle-down fa-lg"></i></a>
+                                        <ul id="dropdown4" class="dropdown-menu hide">
+                                            <li><a href="#">Pages Example</a></li>
+                                            <li><a href="#">Pages Example</a></li>
+                                            <li><a href="#">Pages Example</a></li>
+                                            <li><a href="#">Pages Example</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown_container">
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown">BLOG<i id="dropdown4"
+                                                class="icon-arrow some_dropdown fal fa-angle-down fa-lg"></i></a>
+                                        <ul id="dropdown4" class="some_dropdown dropdown-menu hide">
+                                            <li><a href="#">Pages Example</a></li>
+                                            <li><a href="#">Pages Example</a></li>
+                                            <li><a href="#">Pages Example</a></li>
+                                            <li><a href="#">Pages Example</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown_container">
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="#" data-toggle="dropdown">ELEMENTS<i id="dropdown4"
+                                                class="icon-arrow some_dropdown fal fa-angle-down fa-lg"></i></a>
+                                        <ul id="dropdown4" class="some_dropdown dropdown-menu hide">
+                                            <li><a href="#">Pages Example</a></li>
+                                            <li><a href="#">Pages Example</a></li>
+                                            <li><a href="#">Pages Example</a></li>
+                                            <li><a href="#">Pages Example</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search_section">
+                        <div class="search_bar">
+                            <input class="input_search" type="search" name="search_bar" id="" placeholder="Search Product ...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <a class="search_section_items" href="#"><span><i class="far fa-heart"></i></span></a>
+                        <a class="search_section_items" href="#"><span><i class="fas fa-shopping-cart"></i></span></a>
+                        <p class="search_section_items">2</p>
+                    </div>
+                </nav>
+            </header>
+
+
+            <!-- Swiper -->
+            <div class="swiper header_image_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <section class="header_slider">
+                            <div class="container">
+                                <p>Limited Time Only</p>
+                                <h1>Treat Your Self</h1>
+                                <p>Upto 50% off</p>
+                                <button type="button" class="" name="shop_now"><a href="#">SHOP NOW</a></button>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section class="header_slider">
+                            <div class="container">
+                                <p>Don't Miss</p>
+                                <h1>Mystery Deals</h1>
+                                <p>Online Only</p>
+                                <button type="button" class="" name="shop_now"><a href="#">SHOP NOW</a></button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="swiper-pagination" style="--swiper-pagination-bullet-size:6px; --swiper-pagination-bullet-inactive-color:none; ">
+                </div>
+            </div>
+            <!-- <div class="container">
+                <p>Limited Time Only</p>
+                <h1>Treat Your Self</h1>
+                <p>Upto 50% off</p>
+                <button type="button" class="" name="shop_now">SHOP NOW</button>
+            </div> -->
+            <!-- </section> -->
+        </main>
+
+        <section class="promoters">
+            <div class="promoter_div">
+                <img src="images/lebarrel.png" alt="Le Barrel Private Limited" srcset="">
+            </div>
+            <div class="promoter_div">
+                <img src="images/something.png" alt="Something Website" srcset="">
+            </div>
+            <div class="promoter_div">
+                <img src="images/costabrava.png" alt="CostaBrava" srcset="">
+            </div>
+            <div class="promoter_div">
+                <img src="images/ocean.png" alt="Oceanic Logo" srcset="">
+            </div>
+            <div class="promoter_div">
+                <img src="images/fountain.png" alt="Fountain.com" srcset="">
+            </div>
+            <div class="promoter_div">
+                <img src="images/blackbird.png" alt="BlackBird" srcset="">
+            </div>
+            <div class="promoter_div">
+                <img src="images/hugo.png" alt="Hugo Company" srcset="">
+            </div>
+        </section>
+
+
+        <section class="trending">
+            <div class="container">
+                <div class="trending_top">
+                    <div class="trending_top_card_1">
+                        <div>
+                            <p>Trending Now</p>
+                            <h4>This Week's <br> Most Wanted</h4>
+                            <button><a href="#">Discover Now <i
+                                        class="fas fa-long-arrow-alt-right fa-xs"></i></a></button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="trending_top_card_2">
+                            <div>
+                                <p>Limited Time Only.</p>
+                                <h4>Trainers & Sportwear <br> Sale Up to 70% off</h4>
+                                <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right fa-xs"></i></a>
+                            </div>
+                        </div>
+                        <div class="trending_top_card_3">
+                            <div>
+                                <p>This Week We Love...</p>
+                                <h4>Womens <br> Holiday Clothes</h4>
+                                <button><a href="#">Discover Now <i
+                                            class="fas fa-long-arrow-alt-right fa-xs"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trending_bottom">
+                    <h1>Trendy Products</h1>
+                    <ul>
+                        <li>
+                            <a id="all" href="#" class="border">ALL</a>
+                        </li>
+                        <li>
+                            <a id="women" href="#">WOMEN</a>
+                        </li>
+                        <li>
+                            <a id="men" href="#">MEN</a>
+                        </li>
+                        <li>
+                            <a id="accessories" href="#">ACCESSORIES</a>
+                        </li>
+                    </ul>
+
+                    <div class="swiper_container1 ">
+                        <div class="swiper mySwiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Vest Dress</div>
+                                            <div class="card_value">$9.99</div>
+                                            <div class="card_optional"></div>
+                                            <div class="card_color_button">
+                                                <span class="black_btn"></span>
+                                                <span class="green_btn"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="trending_bottom_badge_bg">
+                                                    <div class="badge_text">Sale</div>
+                                                </div>
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></button>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                                </div>
+                                                <div class="card_title">SHOES</div>
+                                                <div class="card_description">Sandals</div>
+                                                <div class="card_value sale_value">Now $24.99</div>
+                                                <div class="card_optional">Was $30.99</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="trending_bottom_cards">
+                                            <div class="card_main">
+                                                <div class="card_image">
+                                                    <div class="wishlist">
+                                                        <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                    </div>
+                                                    <span class="add_to_cart" type="button"><a href="#">ADD TO
+                                                        CART</a></span>
+                                                </div>
+                                                <div class="card_title">HANDBAGS</div>
+                                                <div class="card_description">Bucket bag</div>
+                                                <div class="card_value">$17.99</div>
+                                                <div class="card_optional"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="trending_bottom_cards">
+                                            <div class="card_main">
+                                                <div class="card_image">
+                                                    <div class="wishlist">
+                                                        <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                    </div>
+                                                    <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                                </div>
+                                                <div class="card_title">CLOTHING</div>
+                                                <div class="card_description">Vest Dress</div>
+                                                <div class="card_value">$9.99</div>
+                                                <div class="card_optional"></div>
+                                                <div class="card_color_button">
+                                                    <span class="black_btn"></span>
+                                                    <span class="green_btn"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="trending_bottom_cards">
+                                            <div class="card_main">
+                                                <div class="card_image">
+                                                    <div class="wishlist">
+                                                        <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                    </div>
+                                                    <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                                </div>
+                                                <div class="card_title">CLOTHING</div>
+                                                <div class="card_description">Dress with a belt</div>
+                                                <div class="card_value">$29.99</div>
+                                                <div class="card_optional"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="trending_bottom_cards">
+                                            <div class="card_main">
+                                                <div class="card_image">
+                                                    <div class="wishlist">
+                                                        <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                    </div>
+                                                    <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                                </div>
+                                                <div class="card_title">CLOTHING</div>
+                                                <div class="card_description">Vest Dress</div>
+                                                <div class="card_value">$9.99</div>
+                                                <div class="card_optional"></div>
+                                                <div class="card_color_button">
+                                                    <span class="black_btn"></span>
+                                                    <span class="green_btn"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="trending_bottom_cards">
+                                            <div class="card_main">
+                                                <div class="card_image">
+                                                    <div class="trending_bottom_badge_bg">
+                                                        <div class="badge_text">Sale</div>
+                                                    </div>
+                                                    <div class="wishlist">
+                                                        <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                    </div>
+                                                    <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                                </div>
+                                                <div class="card_title">SHOES</div>
+                                                <div class="card_description">Sandals</div>
+                                                <div class="card_value sale_value">Now $24.99</div>
+                                                <div class="card_optional">Was $30.99</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-pagination swiper_pagination_2" style="--swiper-pagination-bullet-size:6px; --swiper-pagination-bullet-inactive-color:none;">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-button-next swiper1-button-next"></div>
+                        <div class="swiper-button-prev swiper1-button-prev"></div>
+
+
+                        <div class="swiper_container2 cards_visibility">
+                            <div class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="trending_bottom_cards">
+                                            <div class="card_main">
+                                                <div class="card_image">
+                                                    <div class="wishlist">
+                                                        <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                    </div>
+                                                    <button class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Vest Dress</div>
+                                            <div class="card_value">$9.99</div>
+                                            <div class="card_optional"></div>
+                                            <div class="card_color_button">
+                                                <span class="black_btn"></span>
+                                                <span class="green_btn"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="trending_bottom_badge_bg">
+                                                    <div class="badge_text">Sale</div>
+                                                </div>
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">SHOES</div>
+                                            <div class="card_description">Sandals</div>
+                                            <div class="card_value sale_value">Now $24.99</div>
+                                            <div class="card_optional">Was $30.99</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">HANDBAGS</div>
+                                            <div class="card_description">Bucket bag</div>
+                                            <div class="card_value">$17.99</div>
+                                            <div class="card_optional"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Vest Dress</div>
+                                            <div class="card_value">$9.99</div>
+                                            <div class="card_optional"></div>
+                                            <div class="card_color_button">
+                                                <span class="black_btn"></span>
+                                                <span class="green_btn"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Dress with a belt</div>
+                                            <div class="card_value">$29.99</div>
+                                            <div class="card_optional"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Vest Dress</div>
+                                            <div class="card_value">$9.99</div>
+                                            <div class="card_optional"></div>
+                                            <div class="card_color_button">
+                                                <span class="black_btn"></span>
+                                                <span class="green_btn"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="trending_bottom_badge_bg">
+                                                    <div class="badge_text">Sale</div>
+                                                </div>
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">SHOES</div>
+                                            <div class="card_description">Sandals</div>
+                                            <div class="card_value sale_value">Now $24.99</div>
+                                            <div class="card_optional">Was $30.99</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination swiper_pagination_2"
+                                style="--swiper-pagination-bullet-size:6px; --swiper-pagination-bullet-inactive-color:none;">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper2-button-next"></div>
+                        <div class="swiper-button-prev swiper2-button-prev"></div>
+                    </div>
+
+
+                    <div class="swiper_container3 cards_visibility">
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Vest Dress</div>
+                                            <div class="card_value">$9.99</div>
+                                            <div class="card_optional"></div>
+                                            <div class="card_color_button">
+                                                <span class="black_btn"></span>
+                                                <span class="green_btn"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="trending_bottom_badge_bg">
+                                                    <div class="badge_text">Sale</div>
+                                                </div>
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">SHOES</div>
+                                            <div class="card_description">Sandals</div>
+                                            <div class="card_value sale_value">Now $24.99</div>
+                                            <div class="card_optional">Was $30.99</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">HANDBAGS</div>
+                                            <div class="card_description">Bucket bag</div>
+                                            <div class="card_value">$17.99</div>
+                                            <div class="card_optional"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Vest Dress</div>
+                                            <div class="card_value">$9.99</div>
+                                            <div class="card_optional"></div>
+                                            <div class="card_color_button">
+                                                <span class="black_btn"></span>
+                                                <span class="green_btn"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Dress with a belt</div>
+                                            <div class="card_value">$29.99</div>
+                                            <div class="card_optional"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Vest Dress</div>
+                                            <div class="card_value">$9.99</div>
+                                            <div class="card_optional"></div>
+                                            <div class="card_color_button">
+                                                <span class="black_btn"></span>
+                                                <span class="green_btn"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="trending_bottom_badge_bg">
+                                                    <div class="badge_text">Sale</div>
+                                                </div>
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">SHOES</div>
+                                            <div class="card_description">Sandals</div>
+                                            <div class="card_value sale_value">Now $24.99</div>
+                                            <div class="card_optional">Was $30.99</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination swiper_pagination_2"
+                                style="--swiper-pagination-bullet-size:6px; --swiper-pagination-bullet-inactive-color:none;">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper3-button-next"></div>
+                        <div class="swiper-button-prev swiper3-button-prev"></div>
+                    </div>
+
+
+                    <div class="swiper_container4 cards_visibility">
+                        <div class="swiper mySwiper4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Vest Dress</div>
+                                            <div class="card_value">$9.99</div>
+                                            <div class="card_optional"></div>
+                                            <div class="card_color_button">
+                                                <span class="black_btn"></span>
+                                                <span class="green_btn"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="trending_bottom_badge_bg">
+                                                    <div class="badge_text">Sale</div>
+                                                </div>
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">SHOES</div>
+                                            <div class="card_description">Sandals</div>
+                                            <div class="card_value sale_value">Now $24.99</div>
+                                            <div class="card_optional">Was $30.99</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">HANDBAGS</div>
+                                            <div class="card_description">Bucket bag</div>
+                                            <div class="card_value">$17.99</div>
+                                            <div class="card_optional"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Vest Dress</div>
+                                            <div class="card_value">$9.99</div>
+                                            <div class="card_optional"></div>
+                                            <div class="card_color_button">
+                                                <span class="black_btn"></span>
+                                                <span class="green_btn"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Dress with a belt</div>
+                                            <div class="card_value">$29.99</div>
+                                            <div class="card_optional"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">CLOTHING</div>
+                                            <div class="card_description">Vest Dress</div>
+                                            <div class="card_value">$9.99</div>
+                                            <div class="card_optional"></div>
+                                            <div class="card_color_button">
+                                                <span class="black_btn"></span>
+                                                <span class="green_btn"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="trending_bottom_cards">
+                                        <div class="card_main">
+                                            <div class="card_image">
+                                                <div class="trending_bottom_badge_bg">
+                                                    <div class="badge_text">Sale</div>
+                                                </div>
+                                                <div class="wishlist">
+                                                    <span><a href="#"><i class="far fa-heart"></i></a></span>
+                                                </div>
+                                                <span class="add_to_cart"><a href="#">ADD TO
+                                                        CART</a></span>
+                                            </div>
+                                            <div class="card_title">SHOES</div>
+                                            <div class="card_description">Sandals</div>
+                                            <div class="card_value sale_value">Now $24.99</div>
+                                            <div class="card_optional">Was $30.99</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination swiper_pagination_2"
+                                style="--swiper-pagination-bullet-size:6px; --swiper-pagination-bullet-inactive-color:none;">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper4-button-next"></div>
+                        <div class="swiper-button-prev swiper4-button-prev"></div>
+                    </div>
+
+
+
+                </div>
+        </section>
+
+
+        <section class="new_collection">
+            <div class="container">
+                <p>NEW COLLECTION</p>
+                <h1>Winter'19<span> / </span>Spring'20</h1>
+                <button class="play_video"><i class="fas fa-play"></i></button>
+                                                </div>
+        </section>
+
+        <section class="arrivals">
+            <div class="container">
+                <div class="specials">
+                    <div class="specials_block_1">
+                        <p class="special_text">SPECIAL</p>
+                        <h1>Refine Your Style.</h1>
+                        <p>Get on our exclusive email list and be the first to hear <br> about sale, coupons, new arrivals and more!
+                        </p>
+                        <div class="special_cards">
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_description">Rib-knit cardigan</div>
+                                <div class="card_value">$24.99</div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_description">Linen-blend trousers</div>
+                                <div class="card_value">$19.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specials_block_2">
+                        <div>
+                            <h3>Casual basics and <br> trendy key pieces.</h3>
+                            <p class="specials_block_2_first_p">IN THIS LOOK</p>
+                            <li>Rib-knit cardigan</li>
+                            <li>Linen-blend paper bag trousers</li>
+                            <p>$19.99-$48.00</p>
+                            <button><a href="#">BUY ALL</a></button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="new_arrivals">
+                    <h1>New Arrivals</h1>
+                    <ul>
+                        <li><a id="newArrivals_All" class="border" href="#">ALL</a></li>
+                        <li><a id="newArrivals_Clothing" href="#">CLOTHING</a></li>
+                        <li><a id="newArrivals_shoes_bags" href="#">SHOES & BOOTS</a></li>
+                        <li><a id="newArrivals_accessories" href="#">ACCESSORIES</a></li>
+                    </ul>
+                    <div class="all_section_cards">
+                        <div class="new_arrival_cards">
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Linen-blend dress</div>
+                                <div class="card_value">$60.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card1_color_button">
+                                    <button type="button" class="yellow_btn"></button>
+                                    <button type="button" class="blue_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="new_arrival_badge_bg">
+                                        <div class="badge_text">Sale</div>
+                                    </div>
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">SHOES</div>
+                                <div class="card_description">Sandals with lacing</div>
+                                <div class="card_value sale_value">Now $70.00</div>
+                                <div class="card_optional">Was $155.00</div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Paper bag trousers</div>
+                                <div class="card_value">$60.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">HANDBAGS</div>
+                                <div class="card_description">Paper straw shopper</div>
+                                <div class="card_value">$398.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card3_color_button">
+                                    <button type="button" class="green_btn"></button>
+                                    <button type="button" class="black_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">HANDBAGS</div>
+                                <div class="card_description">Bucket bag</div>
+                                <div class="card_value">$350.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Silk-blend kaftan</div>
+                                <div class="card_value">$370.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card5_color_button">
+                                    <button type="button" class="yellow_btn"></button>
+                                    <button type="button" class="orange_btn"></button>
+                                    <button type="button" class="black_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Linen-blend jumpsuit</div>
+                                <div class="card_value">$595.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="new_arrival_badge_bg">
+                                        <div class="badge_text">Sale</div>
+                                    </div>
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">SHOES</div>
+                                <div class="card_description">Sandals</div>
+                                <div class="card_value sale_value">Now $120.00</div>
+                                <div class="card_optional">Was $140.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="clothing_section_cards cards_visibility">
+                        <div class="new_arrival_cards">
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="new_arrival_badge_bg">
+                                        <div class="badge_text">Sale</div>
+                                    </div>
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">SHOES</div>
+                                <div class="card_description">Sandals with lacing</div>
+                                <div class="card_value sale_value">Now $70.00</div>
+                                <div class="card_optional">Was $155.00</div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Linen-blend dress</div>
+                                <div class="card_value">$60.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card1_color_button">
+                                    <button type="button" class="yellow_btn"></button>
+                                    <button type="button" class="blue_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Paper bag trousers</div>
+                                <div class="card_value">$60.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Silk-blend kaftan</div>
+                                <div class="card_value">$370.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card5_color_button">
+                                    <button type="button" class="yellow_btn"></button>
+                                    <button type="button" class="orange_btn"></button>
+                                    <button type="button" class="black_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">HANDBAGS</div>
+                                <div class="card_description">Paper straw shopper</div>
+                                <div class="card_value">$398.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card3_color_button">
+                                    <button type="button" class="green_btn"></button>
+                                    <button type="button" class="black_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">HANDBAGS</div>
+                                <div class="card_description">Bucket bag</div>
+                                <div class="card_value">$350.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="new_arrival_badge_bg">
+                                        <div class="badge_text">Sale</div>
+                                    </div>
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">SHOES</div>
+                                <div class="card_description">Sandals</div>
+                                <div class="card_value sale_value">Now $120.00</div>
+                                <div class="card_optional">Was $140.00</div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Linen-blend jumpsuit</div>
+                                <div class="card_value">$595.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="shoes_boats_cards cards_visibility">
+                        <div class="new_arrival_cards">
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Linen-blend jumpsuit</div>
+                                <div class="card_value">$595.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Linen-blend dress</div>
+                                <div class="card_value">$60.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card1_color_button">
+                                    <button type="button" class="yellow_btn"></button>
+                                    <button type="button" class="blue_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Paper bag trousers</div>
+                                <div class="card_value">$60.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">HANDBAGS</div>
+                                <div class="card_description">Paper straw shopper</div>
+                                <div class="card_value">$398.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card3_color_button">
+                                    <button type="button" class="green_btn"></button>
+                                    <button type="button" class="black_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">HANDBAGS</div>
+                                <div class="card_description">Bucket bag</div>
+                                <div class="card_value">$350.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Silk-blend kaftan</div>
+                                <div class="card_value">$370.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card5_color_button">
+                                    <button type="button" class="yellow_btn"></button>
+                                    <button type="button" class="orange_btn"></button>
+                                    <button type="button" class="black_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="new_arrival_badge_bg">
+                                        <div class="badge_text">Sale</div>
+                                    </div>
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">SHOES</div>
+                                <div class="card_description">Sandals</div>
+                                <div class="card_value sale_value">Now $120.00</div>
+                                <div class="card_optional">Was $140.00</div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="new_arrival_badge_bg">
+                                        <div class="badge_text">Sale</div>
+                                    </div>
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">SHOES</div>
+                                <div class="card_description">Sandals with lacing</div>
+                                <div class="card_value sale_value">Now $70.00</div>
+                                <div class="card_optional">Was $155.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accessories_section_cards cards_visibility">
+                        <div class="new_arrival_cards">
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">HANDBAGS</div>
+                                <div class="card_description">Paper straw shopper</div>
+                                <div class="card_value">$398.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card3_color_button">
+                                    <button type="button" class="green_btn"></button>
+                                    <button type="button" class="black_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Linen-blend dress</div>
+                                <div class="card_value">$60.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card1_color_button">
+                                    <button type="button" class="yellow_btn"></button>
+                                    <button type="button" class="blue_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Linen-blend jumpsuit</div>
+                                <div class="card_value">$595.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Paper bag trousers</div>
+                                <div class="card_value">$60.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">HANDBAGS</div>
+                                <div class="card_description">Bucket bag</div>
+                                <div class="card_value">$350.00</div>
+                                <div class="card_optional"></div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="new_arrival_badge_bg">
+                                        <div class="badge_text">Sale</div>
+                                    </div>
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">SHOES</div>
+                                <div class="card_description">Sandals</div>
+                                <div class="card_value sale_value">Now $120.00</div>
+                                <div class="card_optional">Was $140.00</div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">CLOTHING</div>
+                                <div class="card_description">Silk-blend kaftan</div>
+                                <div class="card_value">$370.00</div>
+                                <div class="card_optional"></div>
+                                <div class="card5_color_button">
+                                    <button type="button" class="yellow_btn"></button>
+                                    <button type="button" class="orange_btn"></button>
+                                    <button type="button" class="black_btn"></button>
+                                </div>
+                            </div>
+                            <div class="card_main">
+                                <div class="card_image">
+                                    <div class="new_arrival_badge_bg">
+                                        <div class="badge_text">Sale</div>
+                                    </div>
+                                    <div class="newarrival_wishlist">
+                                        <button type="button"><a href="#"><i class="far fa-heart"></i></a></button>
+                                    </div>
+                                    <button class="add_to_cart" type="button"><a href="#">ADD TO CART</a></button>
+                                </div>
+                                <div class="card_title">SHOES</div>
+                                <div class="card_description">Sandals with lacing</div>
+                                <div class="card_value sale_value">Now $70.00</div>
+                                <div class="card_optional">Was $155.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="load_more_btn">
+                        <button type="button" name="load_more"><a href="#">LOAD MORE</a></button>
+                    </div>
+                    <div class="social_section">
+                        <div class="shop_social">
+                            <h1>Shop Social</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Quisque congue feugiat cursus.</p>
+                            <div>
+                                <button type="button" class="facebook_btn" name="facebook_btn"><a href="#"><i
+                                            class="fab fa-facebook-f"></i></a></button>
+                                <button type="button" class="twitter_btn" name="twitter_btn"><a href="#"><i
+                                            class="fab fa-twitter"></i></a></button>
+                                <button type="button" class="instagram_btn" name="instagram_btn"><a href="#"><i
+                                            class="fab fa-instagram"></i></a></button>
+                                <button type="button" class="youtube_btn" name="youtube_btn"><a href="#"><i
+                                            class="fab fa-youtube"></i></a></button>
+                                <button type="button" class="pinterest_btn" name="pinterest_btn"><a href="#"><i
+                                            class="fab fa-pinterest"></i></a></button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="latest_deal">
+                            <h1>Get the Latest Deals</h1>
+                            <p>and <br>recieve <span>$20 coupons</span> for first shopping</p>
+                            <div class="email">
+                                <input type="email" name="email" id="" placeholder="Enter your Email Address">
+                                <button class="email_btn"><a href="#"><i
+                                            class="fas fa-long-arrow-alt-right fa-sm"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="support_section">
+            <div class="container">
+                <div class="support_cards">
+                    <div class="support_cards_image support_card_image_hover">
+                        <i class="far fa-heart"></i>
+                        <p>691</p>
+                        <i class="far fa-comments"></i>
+                        <p>87</p>
+                    </div>
+                    <div class="support_cards_image support_card_image_hover">
+                        <i class="far fa-heart"></i>
+                        <p>691</p>
+                        <i class="far fa-comments"></i>
+                        <p>87</p>
+                    </div>
+                    <div class="support_card_image3">
+                        <i class="fab fa-instagram"></i>
+                        <p>@midas_store <br> on instagram</p>
+                        <a href="#">FOLLOW</a>
+                    </div>
+                    <div class="support_cards_image support_card_image_hover">
+                        <i class="far fa-heart"></i>
+                        <p>691</p>
+                        <i class="far fa-comments"></i>
+                        <p>87</p>
+                    </div>
+                    <div class="support_cards_image support_card_image_hover">
+                        <i class="far fa-heart"></i>
+                        <p>691</p>
+                        <i class="far fa-comments"></i>
+                        <p>87</p>
+                    </div>
+                    <div class="support_cards_image support_card_image_hover">
+                        <i class="far fa-heart"></i>
+                        <p>691</p>
+                        <i class="far fa-comments"></i>
+                        <p>87</p>
+                    </div>
+                    <div class="support_cards_image support_card_image_hover">
+                        <i class="far fa-heart"></i>
+                        <p>691</p>
+                        <i class="far fa-comments"></i>
+                        <p>87</p>
+                    </div>
+                    <div class="support_cards_image support_card_image_hover">
+                        <i class="far fa-heart"></i>
+                        <p>691</p>
+                        <i class="far fa-comments"></i>
+                        <p>87</p>
+                    </div>
+                    <div class="support_cards_image support_card_image_hover">
+                        <i class="far fa-heart"></i>
+                        <p>691</p>
+                        <i class="far fa-comments"></i>
+                        <p>87</p>
+                    </div>
+                    <div class="support_cards_image support_card_image_hover">
+                        <i class="far fa-heart"></i>
+                        <p>691</p>
+                        <i class="far fa-comments"></i>
+                        <p>87</p>
+                    </div>
+                </div>
+                <div class="support_bottom_section">
+                    <div class="payment_delivery">
+                        <i class="fas fa-rocket fa-2x"></i>
+                        <div>
+                            <h3>Payment & Delivery</h3>
+                            <p>Free shipping for orders over $50</p>
+                        </div>
+                    </div>
+                    <div class="return_refund">
+                        <i class="fas fa-sync-alt fa-2x"></i>
+                        <div>
+                            <h3>Return & Refund</h3>
+                            <p>Free 100% money back Guarantee</p>
+                        </div>
+                    </div>
+                    <div class="quality_support">
+                        <i class="far fa-life-ring fa-2x"></i>
+                        <div>
+                            <h3>Quality Support</h3>
+                            <p>Always online feedback 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container_footer">
+                <div class="company_description">
+                    <a href="#"><img src="images/brand_logo2.png" alt="Company Logo"></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur finibus <br> accumsan est, sit amet auctor nulla feugiat non. Nulla scelerisque Nulla scelerisque auctor auctor nisi.
+                    </p>
+                    <div class="contact">
+                        <div class="contact_call">
+                            <p>Got Question? Call us 24/7</p>
+                            <h6>+0123 456 789</h6>
+                        </div>
+                        <div class="payment_method">
+                            <p>Payment Method</p>
+                            <img src="images/payment_cards.png" alt="Payments Cards">
+                        </div>
+                    </div>
+                </div>
+                <div class="information">
+                    <h6>Information</h6>
+
+                    <li>
+                        <a href="#">About Molla</a>
+                    </li>
+                    <li>
+                        <a href="#">How to shop on Molla</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#">Log in</a>
+                    </li>
+
+                </div>
+                <div class="customer_services">
+                    <h6>Customer Services</h6>
+                    <li>
+                        <a href="#">Payment Methods</a>
+                    </li>
+                    <li>
+                        <a href="#">Money back guarantee!</a>
+                    </li>
+                    <li>
+                        <a href="#">Returns</a>
+                    </li>
+                    <li>
+                        <a href="#">Shipping</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </div>
+                <div class="my_account">
+                    <h6>My Account</h6>
+                    <li>
+                        <a href="#">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="#">View Cart</a>
+                    </li>
+                    <li>
+                        <a href="#">My Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Track My Order</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <hr>
+                <div class="footer_copyright_social_section">
+                    <div class="copyright">
+                        <p>Copyright © 2019 Molla Store. All Rights Reserved.
+                            <a href="#">Terms Of Use</a> |
+                            <a href="#">Privacy Policy</a>
+                        </p>
+                    </div>
+                    <div class="footer_social_icons">
+                        <p>Social Media</p>
+                        <a href="#"><i class="fab fa-facebook-f facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <div id="popup_video" class="modal visibility">
+            <div class="modal__content">
+
+
+            </div>
+            <button class="modal__close">&times;</button>
+        </div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="js/styles.js"></script>
+
+</body>
+
+</html>

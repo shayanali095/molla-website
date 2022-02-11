@@ -1,0 +1,1947 @@
+/* ///////////////web font ///////////////// */
+
+@font-face {
+    font-family: 'Flaming';
+    src: url('fonts/Flaming.ttf.woff') format('woff'), url('fonts/Flaming.ttf.svg#Flaming') format('svg'), url('fonts/Flaming.ttf.eot'), url('fonts/Flaming.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ///////////////web font ///////////////// */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+/* //////////////////////////// */
+
+
+/*////////////////////// navbar styling ///////////// */
+
+
+/* ///////////////////////////////// */
+
+.dropdown_container {
+    width: fit-content;
+    padding: 0;
+}
+
+.dropdown_container>ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown {
+    border-bottom: 1px solid rgb(204, 102, 102, 0);
+}
+
+.dropdown a {
+    text-decoration: none;
+}
+
+.dropdown [data-toggle="dropdown"] {
+    position: relative;
+    padding: 10px 0px;
+    margin: 0;
+    outline: 0;
+    font-size: 15px;
+    text-decoration: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    cursor: pointer;
+}
+
+.dropdown [data-toggle="dropdown"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid rgba(204, 102, 102, 0);
+}
+
+.some_dropdown {
+    display: none !important;
+}
+
+.dropdown_active {
+    border-bottom: 1px solid rgb(235, 235, 235) !important;
+}
+
+.icon-arrow {
+    margin-left: 5px;
+}
+
+.dropdown [data-toggle="dropdown"]:hover {
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.open {
+    transform: rotate(180deg) !important;
+    transition: transform 0.6s;
+}
+
+.close {
+    transform: rotate(0deg) !important;
+    transition: transform 0.6s;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    width: 200px;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    border: 1px solid rgb(153, 153, 153);
+    border-bottom: none;
+}
+
+.dropdown .dropdown-menu li {
+    padding: 0;
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.dropdown .dropdown-menu li a {
+    display: block;
+    color: white;
+    background: rgb(102, 102, 102);
+    padding: 10px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.dropdown .dropdown-menu li a:hover {
+    background: white;
+    color: rgb(204, 102, 102);
+}
+
+.dropdown .show,
+.dropdown .hide {
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.dropdown .show {
+    display: block;
+    max-height: 9999px;
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+    animation: showAnimation 0.5s ease-in-out;
+    -moz-animation: showAnimation 0.5s ease-in-out;
+    -webkit-animation: showAnimation 0.5s ease-in-out;
+    -webkit-transition: max-height 1s ease-in-out;
+    -moz-transition: max-height 1s ease-in-out;
+    -o-transition: max-height 1s ease-in-out;
+    transition: max-height 1s ease-in-out;
+}
+
+.dropdown .hide {
+    max-height: 0;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+    animation: hideAnimation 0.4s ease-out;
+    -moz-animation: hideAnimation 0.4s ease-out;
+    -webkit-animation: hideAnimation 0.4s ease-out;
+    -webkit-transition: max-height 0.6s ease-out;
+    -moz-transition: max-height 0.6s ease-out;
+    -o-transition: max-height 0.6s ease-out;
+    transition: max-height 0.6s ease-out;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(102, 101, 101);
+    padding: 1rem;
+}
+
+.brandImage {
+    width: 80px;
+    padding: 0 20px 0 10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0px 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .search_section {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .search_section_items {
+    margin: 0 10px;
+    color: white;
+    font-size: 26px;
+}
+
+.search_section p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 102, 102);
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.search_bar {
+    display: inline;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+    margin: 0 10px 0 0;
+}
+
+.input_search {
+    background: transparent;
+    border: none;
+    color: rgb(235, 235, 235);
+    width: 270px;
+    font-size: 14px;
+}
+
+.input_search::placeholder {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.input_search:focus {
+    outline: none;
+}
+
+.input_search::-webkit-search-decoration,
+.input_search::-webkit-search-cancel-button,
+.input_search::-webkit-search-results-button,
+.input_search::-webkit-search-results-decoration {
+    display: none;
+}
+
+.search_bar button {
+    background: none;
+    font-size: 22px;
+    border: none;
+    color: white;
+}
+
+
+/* ////////////////////////// */
+
+
+/* //////////////////////// main section styling ///////////////// */
+
+
+/* /////////////////////////// */
+
+main {
+    background-color: rgb(102, 101, 101);
+    color: white;
+    height: 782px;
+}
+
+.header_slider {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5rem 0 12rem 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1168px;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1168px;
+}
+
+.header_slider p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    font-size: 20px;
+    color: white;
+    line-height: 1.2;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.header_slider h1 {
+    font-family: "Flaming";
+    font-size: 140px;
+    font-weight: lighter;
+    margin: 0;
+    color: white;
+    line-height: 1.2;
+}
+
+.header_slider button {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 166px;
+    height: 42px;
+    margin-top: 50px !important;
+    font-family: 'Poppins';
+}
+
+.header_slider button a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+}
+
+.header_slider button:hover {
+    background-color: white;
+    color: rgb(204, 102, 102);
+}
+
+.header_slider button:hover a {
+    color: rgb(204, 102, 102);
+}
+
+
+/* //////////////////////// */
+
+
+/* /////////////////promoters Brand logo section ///////////////////////// */
+
+
+/* /////////////////////// */
+
+.promoters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.promoters .promoter_div {
+    border: 1px solid rgba(173, 173, 173, 0.2);
+    border-left: 0;
+    width: 14.3%;
+    text-align: center;
+}
+
+.promoters img {
+    height: 23px;
+    margin: 0;
+    padding: 20px 50px;
+}
+
+
+/* ////////////////////////////// */
+
+
+/* ///////////////////trending section///////////////////////////// */
+
+
+/* ///////////////////////////// */
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending .trending_top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+
+/* *************************Trending Card 1 Styling************************* */
+
+.trending_top_card_1 {
+    background-color: rgb(204, 204, 204);
+    width: 574px;
+    height: 630px;
+}
+
+.trending_top_card_1:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+.trending_top_card_1:hover p,
+.trending_top_card_1:hover a,
+.trending_top_card_1:hover h4 {
+    color: white;
+}
+
+.trending_top_card_1:hover div {
+    border: 5px solid rgb(173, 173, 173);
+}
+
+.trending_top_card_1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    width: 525px;
+    height: 580px;
+    border: 5px solid rgba(173, 173, 173, 0);
+    transition: border 0.3s ease;
+}
+
+.trending_top_card_1 div p {
+    font-size: 16px;
+    margin: 4px;
+    padding-left: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: rgb(153, 153, 153);
+}
+
+.trending_top_card_1 div h4 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 1rem;
+    margin: 4px;
+    color: rgb(51, 51, 51);
+    line-height: 1.25;
+}
+
+.trending_top_card_1 div button {
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    width: 146px;
+    height: 32px;
+    margin-left: 20px;
+    transition: all 0.1s ease;
+    text-align: center;
+}
+
+.trending_top_card_1 div button:hover {
+    background-color: rgb(204, 102, 102);
+    width: 146px;
+    height: 32px;
+    border-radius: 20px;
+    border: none;
+}
+
+.trending_top_card_1 div button:hover a {
+    padding: 0;
+}
+
+.trending_top_card_1 div button a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+
+/* *************************Trending Card 2 Styling************************* */
+
+.trending_top_card_2 {
+    background-color: rgb(204, 204, 204);
+    width: 574px;
+    height: 307px;
+    margin: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending_top_card_2:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+.trending_top_card_2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 525px;
+    height: 257px;
+    border: 5px solid rgba(173, 173, 173, 0);
+    transition: border 0.3s ease;
+}
+
+.trending_top_card_2:hover div {
+    border: 5px solid rgb(173, 173, 173);
+}
+
+.trending_top_card_2:hover p,
+.trending_top_card_2:hover a,
+.trending_top_card_2:hover h4 {
+    color: white;
+}
+
+.trending_top_card_2 div p {
+    font-size: 16px;
+    margin: 4px;
+    padding-left: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: rgb(153, 153, 153);
+}
+
+.trending_top_card_2 div h4 {
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    padding-left: 1rem;
+    margin: 4px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.trending_top_card_2 div a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    margin-left: 45px;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(204, 102, 102, 0);
+    transition: border 0.1s ease;
+}
+
+.trending_top_card_2 a:hover {
+    color: rgb(204, 102, 102);
+    border-bottom: 2px solid rgb(204, 102, 102);
+    padding-bottom: 10px;
+}
+
+
+/* *************************Trending Card 3 Styling************************* */
+
+.trending_top_card_3 {
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 574px;
+    height: 307px;
+    margin: 0 0 0 16px;
+}
+
+.trending_top_card_3:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+.trending_top_card_3 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 525px;
+    height: 257px;
+    border: 5px solid rgba(173, 173, 173, 0);
+    transition: border 0.3s ease;
+}
+
+.trending_top_card_3:hover div {
+    border: 5px solid rgb(173, 173, 173);
+}
+
+.trending_top_card_3:hover p,
+.trending_top_card_3:hover a,
+.trending_top_card_3:hover h4 {
+    color: white;
+}
+
+.trending_top_card_3 p {
+    font-size: 16px;
+    margin: 4px;
+    line-height: 1.2;
+    padding-left: 1rem;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+}
+
+.trending_top_card_3 h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.3;
+    color: rgb(51, 51, 51);
+    padding-left: 1rem;
+    margin: 4px;
+}
+
+.trending_top_card_3 button {
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    width: 146px;
+    height: 32px;
+    margin-left: 20px;
+    text-align: center;
+    transition: all 0.1s ease;
+}
+
+.trending_top_card_3 button:hover {
+    background-color: rgb(204, 102, 102);
+    width: 146px;
+    height: 32px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.trending_top_card_3 button:hover a {
+    color: white;
+}
+
+.trending_top_card_3 button a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+
+/* ////////////////////////// */
+
+
+/* ////////////Trending bottom section//////////////////////////// */
+
+
+/* /////////////////////////// */
+
+.trending_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending_bottom h1 {
+    color: rgb(51, 51, 51);
+    font-size: 30px;
+    margin: 10px 0 22px 0;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.trending_bottom ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+
+.trending_bottom ul li a {
+    text-decoration: none;
+    line-height: 1.2;
+    font-size: 15px;
+    padding: 0 8px 10px 8px;
+    margin-right: 20px;
+    color: rgb(153, 153, 153);
+    border-bottom: 1px solid rgba(204, 102, 102, 0);
+}
+
+.trending_bottom ul li a:hover {
+    border-bottom: 1px solid rgb(204, 102, 102);
+}
+
+
+/* ******************trending bottom cards styling*********************** */
+
+.trending_bottom_cards {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+}
+
+.trending_bottom_cards .card_main {
+    margin: 0 8px;
+}
+
+.trending_bottom_cards .card_main .card_image {
+    background-color: rgb(215, 215, 215);
+    width: 277px;
+    height: 377px;
+}
+
+.trending_bottom_cards .card_main .card_title {
+    padding-top: 20px;
+    line-height: 1.2;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+}
+
+.trending_bottom_cards .card_main .card_description {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    line-height: 1.429;
+}
+
+.sale_value {
+    color: rgb(239, 131, 123) !important;
+}
+
+.trending_bottom_cards .card_main .card_value {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    margin: 15px 0 3px 0;
+    font-weight: 500;
+}
+
+.trending_bottom_cards .card_main .card_optional {
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+    line-height: 1.2;
+}
+
+.trending_bottom_cards button {
+    background-color: transparent;
+    border: none;
+    color: rgb(173, 173, 173);
+}
+
+.trending_bottom_cards .card_main .trending_bottom_badge_bg {
+    background-color: rgb(239, 131, 123);
+    width: 45px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending_bottom_cards .trending_bottom_badge_bg .badge_text {
+    font-size: 13px;
+    color: white;
+    line-height: 1.2;
+}
+
+.trending_bottom_cards .card_color_button .black_btn {
+    background-color: #2d272b;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    margin-right: 3px;
+}
+
+.trending_bottom_cards .card_color_button .green_btn {
+    display: inline-block;
+    background-color: #8f957d;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+}
+
+
+/* ///////////////////////////// */
+
+
+/* //////////////////////////new Collection section////////////////////// */
+
+
+/* //////////////////////////// */
+
+.new_collection {
+    background-color: rgb(102, 102, 102);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.new_collection p {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.new_collection h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.new_collection h1 span {
+    font-weight: 200;
+}
+
+.new_collection button {
+    margin: 20px 0;
+    width: 90px;
+    height: 90px;
+    font-size: 18px;
+    color: rgb(204, 102, 102);
+    border: 12px solid rgba(107, 106, 106, 0.8);
+    border-radius: 100%;
+}
+
+.new_collection button:hover {
+    background-color: rgb(204, 102, 102);
+    border: 10px solid rgba(107, 106, 106, 0.8);
+    color: white;
+    transition: all 0.1s ease;
+}
+
+
+/* ////////////////////// */
+
+
+/* //////////////////////arrivals styling///////////////////// */
+
+
+/* //////////////////////// */
+
+.arrivals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.specials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* *********************************special block 1 styling*************************** */
+
+.specials_block_1 {
+    width: 575px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.specials_block_1 .special_text {
+    color: rgb(204, 102, 102);
+    font-size: 16px;
+    line-height: 1.875;
+    margin: 0;
+}
+
+.specials_block_1 h1 {
+    font-size: 30px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 1;
+}
+
+.specials_block_1 p {
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.specials_block_1 .special_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 0 0 0;
+}
+
+.special_cards .card_main {
+    margin: 5px;
+}
+
+.special_cards .card_main .card_image {
+    width: 150px;
+    height: 224px;
+    background-color: rgb(215, 215, 215);
+}
+
+.special_cards .card_main .card_description,
+.special_cards .card_main .card_value {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    margin: 15px 0 0 0;
+}
+
+.special_cards .card_main .card_value {
+    font-weight: 500;
+}
+
+
+/* *********************specials block 2 styling***************************** */
+
+.specials_block_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgb(102, 102, 102);
+    text-align: start;
+    width: 575px;
+    height: 630px;
+}
+
+.specials_block_2 div {
+    margin: 0 0 75px 50px;
+}
+
+.specials_block_2 h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.specials_block_2 .specials_block_2_first_p {
+    font-size: 12px !important;
+    margin: 15px 0 5px 0 !important;
+}
+
+.specials_block_2 p {
+    font-size: 14px;
+    color: rgb(235, 235, 235);
+    line-height: 2.5;
+    margin: 20px 0 0 0;
+}
+
+.specials_block_2 li {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.specials_block_2 button {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 126px;
+    height: 42px;
+    margin-top: 20px;
+}
+
+.specials_block_2 button a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.specials_block_2 button:hover {
+    background-color: white;
+}
+
+.specials_block_2 button:hover a {
+    color: rgb(204, 102, 102);
+}
+
+.arrivals hr {
+    border: none;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin-top: 70px;
+    width: 1168px;
+}
+
+
+/* ////////////////////////// */
+
+
+/* /////////////////////////new Arrivals section styling////////////////////////// */
+
+
+/* //////////////////////////// */
+
+.new_arrivals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.new_arrivals h1 {
+    color: rgb(51, 51, 51);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.new_arrivals ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+.new_arrivals ul li a {
+    text-decoration: none;
+    margin-right: 25px;
+    padding: 5px;
+    color: rgb(153, 153, 153);
+    font-size: 15px;
+    border-bottom: 1px solid rgba(204, 102, 102, 0);
+}
+
+.new_arrivals ul li a:hover {
+    border-bottom: 1px solid rgb(204, 102, 102);
+}
+
+
+/* **************************new arrivals card styling********************************* */
+
+.new_arrival_cards {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0 40px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1168px;
+}
+
+.new_arrival_cards .card_main {
+    margin: 25px 7px 0 7px;
+}
+
+.new_arrival_cards .card_image {
+    background-color: rgb(215, 215, 215);
+    width: 277px;
+    height: 377px;
+}
+
+.new_arrival_cards .card_title {
+    padding-top: 20px;
+    line-height: 1.2;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+}
+
+.new_arrival_cards .card_description {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    line-height: 1.429;
+}
+
+.new_arrival_cards .card_value {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    margin: 15px 0 3px 0;
+    font-weight: 500;
+}
+
+.new_arrival_cards .card_optional {
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+}
+
+.new_arrival_cards .card1_color_button .yellow_btn {
+    background-color: #e5dcb1;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    margin-right: 3px;
+    border: none;
+}
+
+.new_arrival_cards .card1_color_button .blue_btn {
+    background-color: #bacbd8;
+    width: 14px;
+    height: 14px;
+    border: none;
+    border-radius: 100%;
+}
+
+.new_arrival_cards .card3_color_button .green_btn {
+    background-color: #9fac76;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    margin-right: 3px;
+    border: none;
+}
+
+.new_arrival_cards .card3_color_button .black_btn {
+    background-color: #333333;
+    width: 14px;
+    height: 14px;
+    border: none;
+    border-radius: 100%;
+}
+
+.new_arrival_cards .card5_color_button .yellow_btn {
+    background-color: #e3a84d;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    margin-right: 3px;
+    border: none;
+}
+
+.new_arrival_cards .card5_color_button .orange_btn {
+    background-color: #f48a5b;
+    width: 14px;
+    height: 14px;
+    border: none;
+    margin-right: 3px;
+    border-radius: 100%;
+}
+
+.new_arrival_cards .card5_color_button .black_btn {
+    background-color: #333333;
+    width: 14px;
+    height: 14px;
+    border: none;
+    border-radius: 100%;
+}
+
+.new_arrival_cards .card_main .new_arrival_badge_bg {
+    background-color: rgb(239, 131, 123);
+    width: 45px;
+    height: 26px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new_arrival_cards .new_arrival_badge_bg .badge_text {
+    font-size: 13px;
+    color: white;
+    line-height: 1.2;
+}
+
+.new_arrivals .load_more_btn button {
+    background: transparent;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 25px;
+    width: 166px;
+    height: 42px;
+}
+
+.new_arrivals .load_more_btn button a {
+    color: rgb(204, 102, 102);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.new_arrivals .load_more_btn button:hover {
+    background-color: rgb(204, 102, 102);
+    border: none;
+}
+
+.new_arrivals .load_more_btn button:hover a {
+    color: white;
+}
+
+
+/* //////////////////////// */
+
+
+/* //////////////////////////wishlist and add to cart section styling///////////////////// */
+
+
+/* ////////////////////// */
+
+.card_image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.wishlist {
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.newarrival_wishlist {
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.newarrival_wishlist button {
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.wishlist span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.wishlist button a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+.add_to_cart {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none !important;
+    width: 100% !important;
+    height: 40px !important;
+    background-color: #fbfbfb !important;
+}
+
+.add_to_cart a {
+    text-decoration: none;
+    font-weight: 500 !important;
+    color: rgb(51, 51, 51) !important;
+    font-size: 14px !important;
+}
+
+.card_image:hover .wishlist,
+.card_image:hover .add_to_cart,
+.card_image:hover .newarrival_wishlist {
+    visibility: visible;
+}
+
+
+/* /////////////////////////////// */
+
+
+/* ///////////////social section styling/////////////////////// */
+
+
+/* ////////////////////// */
+
+.social_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1168px;
+    padding: 80px 0 0 0;
+}
+
+.social_section hr {
+    margin: 0%;
+    border: none;
+    width: 1px;
+    height: 180px;
+    background-color: rgb(235, 235, 235);
+}
+
+
+/* **************************social icons styling******************** */
+
+.social_section .shop_social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+}
+
+.Shop_Social h1 {
+    font-size: 30px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.shop_social p {
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.shop_social div button {
+    border-radius: 100%;
+    width: 46px;
+    height: 46px;
+    border: none;
+    margin: 20px 5px 0 5px;
+}
+
+.shop_social div button a {
+    text-decoration: none;
+    color: white;
+}
+
+.shop_social div .facebook_btn {
+    background-color: rgb(143, 121, 237);
+    color: white;
+    font-size: 16px;
+}
+
+.shop_social div .facebook_btn:hover {
+    background-color: white;
+    border: 2px solid rgb(235, 235, 235);
+}
+
+.shop_social div .facebook_btn:hover a {
+    color: rgb(143, 121, 237);
+}
+
+.shop_social div .twitter_btn {
+    background-color: rgb(121, 200, 237);
+    color: white;
+    font-size: 16px;
+}
+
+.shop_social div .twitter_btn:hover {
+    background-color: white;
+    border: 2px solid rgb(235, 235, 235);
+}
+
+.shop_social div .twitter_btn:hover a {
+    color: rgb(121, 200, 237);
+}
+
+.shop_social div .instagram_btn {
+    background-color: rgb(221, 109, 154);
+    color: white;
+    font-size: 16px;
+}
+
+.shop_social div .instagram_btn:hover {
+    background-color: white;
+    border: 2px solid rgb(235, 235, 235);
+    color: rgb(221, 109, 154);
+}
+
+.shop_social div .instagram_btn:hover a {
+    color: rgb(221, 109, 154);
+}
+
+.shop_social div .youtube_btn {
+    background-color: rgb(230, 98, 98);
+    color: white;
+    font-size: 16px;
+}
+
+.shop_social div .youtube_btn:hover {
+    background-color: white;
+    border: 2px solid rgb(235, 235, 235);
+    color: rgb(230, 98, 98);
+}
+
+.shop_social div .youtube_btn:hover a {
+    color: rgb(230, 98, 98);
+}
+
+.shop_social div .pinterest_btn {
+    background-color: rgb(230, 98, 98);
+    color: white;
+    font-size: 16px;
+}
+
+.shop_social div .pinterest_btn:hover {
+    background-color: white;
+    border: 2px solid rgb(235, 235, 235);
+}
+
+.shop_social div .pinterest_btn:hover a {
+    color: rgb(230, 98, 98);
+}
+
+
+/* ************************latest deals styling**************************** */
+
+.latest_deal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+}
+
+.latest_deal h1 {
+    font-size: 30px;
+    color: rgb(51, 51, 51);
+}
+
+.latest_deal p {
+    text-align: center;
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+    margin: 10px 0 20px 0;
+}
+
+.latest_deal p span {
+    color: rgb(204, 102, 102);
+}
+
+.latest_deal input[name="email"] {
+    background-color: transparent;
+    border: 2px solid rgb(235, 235, 235);
+    width: 290px;
+    padding: 10px 0 10px 30px;
+    border-right: 0;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.latest_deal input[name="email"]::placeholder {
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+}
+
+.latest_deal input[name="email"]:focus {
+    outline: none;
+}
+
+.latest_deal input[name="email"]::-webkit-search-decoration,
+.latest_deal input[name="email"]::-webkit-search-cancel-button,
+.latest_deal input[name="email"]::-webkit-search-results-button,
+.latest_deal input[name="email"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+}
+
+.email .email_btn {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 70px;
+    border: 2px solid rgb(235, 235, 235);
+    height: 48px;
+    border-left: 0;
+    background-color: transparent;
+}
+
+.email .email_btn:hover {
+    background-color: #c15454;
+    border: none;
+}
+
+.email .email_btn:hover a {
+    color: white;
+}
+
+.email .email_btn a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+}
+
+
+/* ///////////////////////////// */
+
+
+/* ////////////////////////Suppport section styling ////////////////////////// */
+
+
+/* ///////////////////////////// */
+
+.support_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+    padding: 70px 0 60px 0;
+}
+
+.support_section .support_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.support_cards .support_cards_image {
+    width: 218px;
+    height: 218px;
+    background-color: rgb(102, 102, 102);
+    margin: 5px;
+}
+
+.support_card_image_hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.support_card_image_hover p,
+.support_card_image_hover i {
+    visibility: hidden;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+.support_card_image_hover:hover p,
+.support_card_image_hover:hover i {
+    visibility: visible;
+}
+
+.support_card_image3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 218px;
+    height: 218px;
+    margin: 5px;
+    color: rgb(51, 51, 51);
+}
+
+.support_card_image3 i {
+    font-size: 24px;
+}
+
+.support_card_image3 p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.support_card_image3 a {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(204, 102, 102);
+    font-weight: 500;
+}
+
+
+/**************************support bottom section styling******************** */
+
+.support_section .support_bottom_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: rgb(51, 51, 51);
+    padding-top: 50px;
+    width: 100%;
+}
+
+.support_bottom_section .payment_delivery,
+.quality_support,
+.return_refund {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment_delivery i,
+.quality_support i,
+.return_refund i {
+    margin-right: 50px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.payment_delivery div h3,
+.quality_support div h3,
+.return_refund div h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.payment_delivery div p,
+.quality_support div p,
+.return_refund div p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    color: rgb(153, 153, 153);
+}
+
+
+/* //////////////////////////// */
+
+
+/* ///////////////////////////About section styling///////////////////// */
+
+
+/* ///////////////////////////// */
+
+.about {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 0 20px 0;
+}
+
+
+/* *******************company discription styling****************** */
+
+.company_description img {
+    width: 110px;
+}
+
+.company_description p {
+    font-size: 14px;
+    margin: 25px 0 0 0;
+    color: rgb(153, 153, 153);
+}
+
+.about .contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact .contact_call p,
+.payment_method p {
+    color: rgb(51, 51, 51);
+    padding-top: 40px;
+    margin: 0 30px 0 0;
+    font-size: 13px;
+}
+
+.contact .contact_call h6 {
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(166, 199, 108);
+    margin: 0;
+}
+
+.payment_method img {
+    width: 272px;
+    margin-top: 5px;
+}
+
+
+/* **********************information, my account, customer_services styling**************** */
+
+.information,
+.my_account,
+.customer_services {
+    margin: 5px 15px;
+    width: 13rem;
+}
+
+.my_account {
+    margin-right: 0 !important;
+}
+
+.information h6,
+.customer_services h6,
+.my_account h6 {
+    margin: 0;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.information li,
+.my_account li,
+.customer_services li {
+    list-style: none;
+}
+
+.information li a,
+.my_account li a,
+.customer_services li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+
+.information li a:hover,
+.my_account li a:hover,
+.customer_services li a:hover {
+    color: rgb(204, 102, 102);
+}
+
+
+/* ////////////////////////// */
+
+
+/* ////////////////////////////footer styling////////////////////////////// */
+
+
+/* ////////////////////////// */
+
+.footer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer hr {
+    background-color: rgb(235, 235, 235);
+    width: 1168px;
+    height: 1px;
+    margin: 0;
+    border: none;
+}
+
+.footer_copyright_social_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 1168px;
+}
+
+.footer_social_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p,
+.copyright p a,
+.footer_social_icons p {
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+
+.copyright p a:hover {
+    color: rgb(204, 102, 102);
+}
+
+.footer_social_icons a {
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.footer_social_icons .facebook {
+    color: rgb(143, 121, 237);
+}
+
+.footer_social_icons .twitter {
+    color: rgb(86, 145, 255);
+}
+
+.footer_social_icons .instagram {
+    color: rgb(221, 109, 154);
+}
+
+.footer_social_icons .youtube {
+    color: rgb(230, 98, 98);
+}
+
+.footer_social_icons .pinterest {
+    color: rgb(230, 98, 98);
+}
+
+
+/* ///////////////////////// */
+
+
+/* ///////////////////////popup video styling////////////////////////// */
+
+
+/* ///////////////////////// */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+}
+
+.modal__content {
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+}
+
+.modal__close {
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    right: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
+.modal__close:hover {
+    cursor: pointer;
+}
+
+.visibility {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cards_visibility {
+    display: none;
+}
+
+.border {
+    border-bottom: 1px solid rgb(204, 102, 102) !important;
+}
+
+
+/* /////////////////////////////// */
+
+
+/* /////////////////////////////swiper css styling///////////////////// */
+
+
+/* //////////////////////////// */
+
+.swiper {
+    width: 1168px;
+    margin-bottom: 70px;
+    transition: 0.6s;
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.trending_bottom {
+    position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute !important;
+    top: 300px !important;
+    --swiper-navigation-size: 30px !important;
+    color: #ebebeb !important;
+}
+
+.swiper-button-next {
+    right: -40px !important;
+}
+
+.swiper-button-prev {
+    left: -40px !important;
+}
+
+.swiper-pagination-bullet-active {
+    --swiper-pagination-bullet-height: 8px !important;
+    --swiper-pagination-bullet-width: 18px !important;
+    --swiper-theme-color: rgb(204, 204, 204) !important;
+    border-radius: 30% !important;
+    border: none !important;
+}
+
+.swiper-pagination {
+    position: relative !important;
+}
+
+.btn_outline {
+    outline: 1px solid rgb(215, 215, 215);
+    outline-offset: 2px;
+}
+
+.swiper-pagination-bullet {
+    border: 1px solid white;
+}
+
+.swiper_pagination_2 .swiper-pagination-bullet {
+    border: 1px solid black;
+}
+
+
+/* //////////////////////////// */
+
+
+/* ////////////////////// */
+
+.swiper_active {
+    border-bottom: 1px solid rgb(204, 102, 102);
+}
